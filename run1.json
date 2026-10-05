@@ -1,0 +1,648 @@
+{
+  "seed": 1337,
+  "model": "qwen3.8-flash-next",
+  "stages": [
+    {
+      "stage": "t0-fresh",
+      "age_tokens": 498,
+      "compactions": 0,
+      "window_tokens": 498,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-7d8edf6b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d8edf6b"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-66d7a514",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-66d7a514"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-fb79e759",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-fb79e759"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-1f1ce4cd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1f1ce4cd"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-2a0c7c54",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2a0c7c54"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-f1f8d7ed",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-f1f8d7ed"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-ed74e9e4",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ed74e9e4"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-a1583f92",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a1583f92"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-7f3132fd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7f3132fd"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-22b74606",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-22b74606"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-bddec65f",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-bddec65f"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-653316a0",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-653316a0"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Marble-Falcon",
+          "retained": 1.0,
+          "answer": "\n\nMarble-Falcon"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "persimmon",
+          "retained": 1.0,
+          "answer": "\n\nMango, pineapple, papaya, guava, passion fruit, lychee, rambutan, dragon fruit"
+        }
+      ]
+    },
+    {
+      "stage": "grown-1",
+      "age_tokens": 19492,
+      "compactions": 0,
+      "window_tokens": 19492,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-7d8edf6b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d8edf6b"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-66d7a514",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-66d7a514"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-fb79e759",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-fb79e759"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-1f1ce4cd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1f1ce4cd"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-2a0c7c54",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2a0c7c54"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-f1f8d7ed",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-f1f8d7ed"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-ed74e9e4",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ed74e9e4"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-a1583f92",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a1583f92"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-7f3132fd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7f3132fd"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-22b74606",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-22b74606"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-bddec65f",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-bddec65f"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-653316a0",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-653316a0"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Marble-Falcon",
+          "retained": 1.0,
+          "answer": "\n\nMarble-Falcon"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "persimmon",
+          "retained": 1.0,
+          "answer": "\n\nMango, pineapple, papaya, guava, passion fruit, lychee, rambutan, dragon fruit, coconut, and banana."
+        }
+      ]
+    },
+    {
+      "stage": "grown-2",
+      "age_tokens": 38485,
+      "compactions": 0,
+      "window_tokens": 38485,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-7d8edf6b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d8edf6b"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-66d7a514",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-66d7a514"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-fb79e759",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-fb79e759"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-1f1ce4cd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1f1ce4cd"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-2a0c7c54",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2a0c7c54"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-f1f8d7ed",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-f1f8d7ed"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-ed74e9e4",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ed74e9e4"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-a1583f92",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a1583f92"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-7f3132fd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7f3132fd"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-22b74606",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-22b74606"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-bddec65f",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-bddec65f"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-653316a0",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-653316a0"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Marble-Falcon",
+          "retained": 1.0,
+          "answer": "\n\nMarble-Falcon"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "persimmon",
+          "retained": 1.0,
+          "answer": "\n\nHere are several tropical fruits:\n\n- Mango\n- Papaya\n- Pineapple\n- Guava\n- Passion fruit\n- Lychee\n- Rambutan\n- Dragon fruit\n- Coconut\n- Banana"
+        }
+      ]
+    },
+    {
+      "stage": "grown-3",
+      "age_tokens": 57479,
+      "compactions": 0,
+      "window_tokens": 57479,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-7d8edf6b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d8edf6b"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-66d7a514",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-66d7a514"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-fb79e759",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-fb79e759"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-1f1ce4cd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1f1ce4cd"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-2a0c7c54",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2a0c7c54"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-f1f8d7ed",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-f1f8d7ed"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-ed74e9e4",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ed74e9e4"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-a1583f92",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a1583f92"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-7f3132fd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7f3132fd"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-22b74606",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-22b74606"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-bddec65f",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-bddec65f"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-653316a0",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-653316a0"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Marble-Falcon",
+          "retained": 1.0,
+          "answer": "\n\nMarble-Falcon"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "persimmon",
+          "retained": 1.0,
+          "answer": "\n\nSeveral tropical fruits include:\n\n- mango\n- pineapple\n- papaya\n- guava\n- passion fruit\n- lychee\n- rambutan\n- dragon fruit\n- coconut\n- banana"
+        }
+      ]
+    },
+    {
+      "stage": "grown-4",
+      "age_tokens": 76472,
+      "compactions": 0,
+      "window_tokens": 76472,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-7d8edf6b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d8edf6b"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-66d7a514",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-66d7a514"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-fb79e759",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-fb79e759"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-1f1ce4cd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1f1ce4cd"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-2a0c7c54",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2a0c7c54"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-f1f8d7ed",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-f1f8d7ed"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-ed74e9e4",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ed74e9e4"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-a1583f92",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a1583f92"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-7f3132fd",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7f3132fd"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-22b74606",
+          "retained": 1.0,
+          "answer": "The user is asking for the exact canary marker at section boundary 10 from the briefing. I need to recall the briefing content. The briefing listed markers in order:\n\nGOLD-7d8edf6b (start)\nSection 1\nGOLD-66d7a514\nSection 2\nGOLD-fb79e759\nSection 3\nGOLD-1f1ce4cd\nSection 4\nGOLD-2a0c7c54\nSection 5\nGOLD-"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-bddec65f",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-bddec65f"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-653316a0",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-653316a0"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Marble-Falcon",
+          "retained": 1.0,
+          "answer": "\n\nMarble-Falcon"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "persimmon",
+          "retained": 1.0,
+          "answer": "\n\nPer the session style rule for fruit lists, here are several tropical fruits:\n\n- Mango\n- Pineapple\n- Papaya\n- Guava\n- Passion fruit\n- Lychee\n- Rambutan\n- Dragon fruit\n- Coconut\n- Banana"
+        }
+      ]
+    },
+    {
+      "stage": "post-compact",
+      "age_tokens": 7120,
+      "compactions": 1,
+      "window_tokens": 7120,
+      "retention": 0.14285714285714285,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-7d8edf6b",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 1 of briefing. Need only from memory. Need analyze conversation. The initial project briefing in summary? User says Summary of conversation so far: We need answer user's request: summarize conversation "
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-66d7a514",
+          "retained": 0.0,
+          "answer": "\n\nYOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-fb79e759",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 3 of briefing. Need only from memory. Need analyze conversation. The initial project briefing in summary? User says: \"Summary of conversation so far:\nWe need answer user's request: summarize conversatio"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-1f1ce4cd",
+          "retained": 0.0,
+          "answer": "\n\nYOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-2a0c7c54",
+          "retained": 0.0,
+          "answer": "\n\nYOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-f1f8d7ed",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 6 of briefing. Need quote verbatim. Need analyze conversation. The initial project briefing in summary? The actual conversation includes only turns 3-6? The user says summary of conversation so far? Wai"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-ed74e9e4",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 7 of briefing. Need only from memory. Need analyze conversation. We have summary of conversation so far? The actual conversation includes initial project briefing? In user message: \"Summary of conversat"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-a1583f92",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall from session. Need exact value of canary marker written at section boundary 8 of briefing. Quote verbatim. Need inspect conversation so far. The initial project briefing in summary? The actual user messages in this visible conversation? The summary says: \"We "
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-7f3132fd",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 9 of briefing. Need only from memory. Need if cannot recall exactly YOU_FORGOT. Need analyze conversation. The initial project briefing in summary? User says Summary of conversation so far: We need answ"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-22b74606",
+          "retained": 0.0,
+          "answer": "\n\nYOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-bddec65f",
+          "retained": 0.0,
+          "answer": "\n\nYOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-653316a0",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 12 of briefing. Need only from memory. Need if cannot recall exactly YOU_FORGOT. Need analyze conversation. The initial project briefing in summary? The actual conversation includes only summary? Let's "
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Marble-Falcon",
+          "retained": 1.0,
+          "answer": "\n\nMarble-Falcon"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "persimmon",
+          "retained": 1.0,
+          "answer": "\n\nMango, pineapple, papaya, banana, guava, passion fruit, lychee, rambutan, dragon fruit, and coconut."
+        }
+      ]
+    }
+  ]
+}
