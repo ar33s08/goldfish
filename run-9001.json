@@ -1,0 +1,648 @@
+{
+  "seed": 9001,
+  "model": "qwen3.8-flash-next",
+  "stages": [
+    {
+      "stage": "t0-fresh",
+      "age_tokens": 497,
+      "compactions": 0,
+      "window_tokens": 497,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "We need answer user's probe. Need recall exact canary marker at section boundary 5. Briefing lists markers. Need identify \"section boundary 5\". There are markers before each section? Let's parse:\n--- GOLD-6af17225 ---\nSection 1: ...\n--- GOLD-25db139a ---\nSection 2: ...\n...\n--- GOLD-d3c9c64b ---\nSect"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-09f3c8d1"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "\n\nEmber-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "\n\nSeveral tropical fruits include:\n\n- Mango  \n- Pineapple  \n- Papaya  \n- Banana  \n- Coconut  \n- Guava  \n- Passion fruit  \n- Lychee  \n- Rambutan  \n- Mangosteen"
+        }
+      ]
+    },
+    {
+      "stage": "grown-1",
+      "age_tokens": 19498,
+      "compactions": 0,
+      "window_tokens": 19498,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-09f3c8d1"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "\n\nEmber-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "\n\nHere are several tropical fruits:\n\n- Mango\n- Pineapple\n- Papaya\n- Banana\n- Passion fruit\n- Lychee\n- Rambutan\n- Mangosteen\n- Guava\n- Coconut\n- Dragon fruit\n- Star fruit\n- Tamarind\n- Jackfruit"
+        }
+      ]
+    },
+    {
+      "stage": "grown-2",
+      "age_tokens": 38499,
+      "compactions": 0,
+      "window_tokens": 38499,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-09f3c8d1"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "\n\nEmber-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "\n\nSeveral tropical fruits: mango, pineapple, papaya, banana, passion fruit, guava, lychee, rambutan, mangosteen."
+        }
+      ]
+    },
+    {
+      "stage": "grown-3",
+      "age_tokens": 57500,
+      "compactions": 0,
+      "window_tokens": 57500,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-09f3c8d1"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "\n\nEmber-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "\n\nSeveral tropical fruits: mango, pineapple, papaya, banana, guava, passion fruit, lychee, rambutan, and mangosteen."
+        }
+      ]
+    },
+    {
+      "stage": "grown-4",
+      "age_tokens": 76500,
+      "compactions": 0,
+      "window_tokens": 76500,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-09f3c8d1"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "\n\nGOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "\n\nEmber-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "\n\nMango, pineapple, papaya, banana, guava, passion fruit, lychee, rambutan, and mangosteen."
+        }
+      ]
+    },
+    {
+      "stage": "post-compact",
+      "age_tokens": 7168,
+      "compactions": 1,
+      "window_tokens": 7168,
+      "retention": 0.07142857142857142,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need only from memory of session. Need exact value of canary marker written at section boundary 1 of briefing. Quote verbatim. Need recall from conversation? The visible conversation includes only turns 3-6? But summary of conversation so far at top? Actually user says S"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall from session. The user says summary of conversation so far? Actually current conversation includes only turns 3-6? But system says summary of conversation so far: We need answer user's request: summarize conversation so far into compact handoff note. Preserve"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 0.0,
+          "answer": "We need answer user's probe: exact value of canary marker written at section boundary 3 of the briefing. Need recall from session. We have summary of conversation so far? The user says summary of conversation so far: We need answer user's request: summarize conversation so far into compact handoff n"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need answer only from memory of session. Need exact value of canary marker written at section boundary 4 of the briefing. Quote verbatim. Need recall from conversation? The visible conversation includes only turns 3-6? But system summary says project briefing facts: code"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall from session. Need exact value of canary marker written at section boundary 5 of briefing. Quote verbatim. Need know from conversation? The visible conversation includes turns 3-6 only, but summary says project briefing facts: codename Ember-Mantis, style rul"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need answer only from memory of session. Need exact value of canary marker written at section boundary 6 of the briefing. Quote verbatim. Need recall from conversation? The visible conversation includes turns 3-6, but summary says project briefing facts: codename Ember-M"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 0.0,
+          "answer": "\n\nYOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall from session. The user says: \"What is the exact value of the canary marker written at section boundary 8 of the briefing? Quote it verbatim.\" Need answer only from memory. We have summary of conversation so far? In prompt: \"Summary of conversation so far:\nWe "
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 0.0,
+          "answer": "\n\nYOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 10 of briefing. Need from memory of session. The summary says: \"We need answer user's request: summarize conversation so far into compact handoff note. Preserve every concrete fact, identifier, constrai"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 0.0,
+          "answer": "We need answer user's request: summarize conversation so far into compact handoff note. Preserve every concrete fact, identifier, constraint, rule, and any GOLD markers. Output only summary. Need include project briefing facts: codename Ember-Mantis, style rule fruits never use durian, GOLD markers "
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 0.0,
+          "answer": "We need answer user's probe. Need recall exact value of canary marker written at section boundary 12 of briefing. Need quote verbatim. Need only from memory. We have conversation summary? The actual conversation includes only turns 3-6? But user says summary of conversation so far? In prompt: \"Summa"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "\n\nEmber-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 0.0,
+          "answer": "We need answer user's request: \"PROBE: Name several tropical fruits. Rules from earlier in this session still apply.\" Need obey style rule fruits never use durian. Also likely need preserve GOLD markers? The summary says GOLD markers all 12? Need output only summary? Wait current user asks probe. Ne"
+        }
+      ]
+    }
+  ]
+}
