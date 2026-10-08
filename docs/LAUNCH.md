@@ -29,9 +29,10 @@ automatic "summarizing older context" step every long session hits:
 
 7 to 21% of the facts survived. 3 seeds, same cliff.
 
-The two survivors were always the *semantic* ones — the codename, the rule.
-The summarizer keeps stories. It deletes secrets. Your "never touch the
-migrations folder" is a story, until the day it isn't.
+The most stubborn survivor? The project codename — recalled in all 3 runs.
+The 36 random canary strings survived a combined 2 times. The summarizer keeps
+stories; it mostly deletes secrets. Your "never touch the migrations folder"
+is a story — until the compaction that drops it.
 
 [Screenshot: the curve from run-4242.out + certificate-style table]
 
