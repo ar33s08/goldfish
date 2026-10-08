@@ -23,7 +23,8 @@ Nobody could measure it. Now you can.
 
 I injected 14 facts into an agent's context (random canary strings, a project
 codename, one style rule), grew the session to 76,000 tokens, then interrogated
-it. Through the entire growth: 100% recall. Then one compaction event — the
+it. Through the growth: ~100% recall (38k tokens in, one seed tripped once —
+noise; compaction is the systematic killer). Then one compaction event — the
 automatic "summarizing older context" step every long session hits:
 
 7 to 21% of the facts survived. 3 seeds, same cliff.
@@ -39,7 +40,7 @@ download isn't what you ran → contextfloor: what you pay before you type →
 goldfish: what survives the session).
 
 Repo: github.com/ar33s08/goldfish — MIT. Run it on your own endpoint:
-`pip install`, one command, your own curve.
+`git clone && python -m goldfish.cli --base-url ... --model ...` — one command, your own curve.
 
 ## D1 — "the 17% paper" post
 Reference COMPINT (arXiv 2608.11242): 17% constraint retention, measured on
