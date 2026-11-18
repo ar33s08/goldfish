@@ -6,19 +6,25 @@ import urllib.request
 
 
 class ChatClient:
-    def __init__(self, base_url, api_key=None, model=None, timeout=600):
+    def __init__(self, base_url, api_key=None, model=None, timeout=600, thinking="endpoint"):
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key or os.environ.get("GOLDFISH_API_KEY", "")
         self.model = model
         self.timeout = timeout
+        self.thinking = thinking
 
-    def chat(self, messages, max_tokens=700, temperature=0.0):
+    def chat(self, messages, max_tokens=700, temperature=0.0, thinking=None):
+        thinking = thinking or self.thinking
+        # thinking="off" sends chat_template_kwargs.enable_thinking=False
+        # (same wire format as decodeproof --thinking off); "endpoint" = default
         payload = {
             "model": self.model,
             "messages": messages,
             "max_tokens": max_tokens,
             "temperature": temperature,
         }
+        if thinking == "off":
+            payload["chat_template_kwargs"] = {"enable_thinking": False}
         req = urllib.request.Request(
             self.base_url + "/chat/completions",
             data=json.dumps(payload).encode(),

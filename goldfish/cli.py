@@ -22,11 +22,13 @@ def main(argv=None):
     p.add_argument("--compact-at", type=int, default=24000, help="est tokens before compaction")
     p.add_argument("--no-compact", action="store_true")
     p.add_argument("--json", dest="json_out")
+    p.add_argument("--thinking", choices=["endpoint", "off"], default="endpoint",
+                   help="'off' sends chat_template_kwargs.enable_thinking=False")
     a = p.parse_args(argv)
     if not (a.base_url and a.model):
         p.error("--base-url and --model required (or GOLDFISH_BASE_URL/GOLDFISH_MODEL)")
 
-    client = ChatClient(a.base_url, a.api_key, a.model)
+    client = ChatClient(a.base_url, a.api_key, a.model, thinking=a.thinking)
     exp = Experiment(client, n_markers=a.markers, seed=a.seed, compact_at=a.compact_at)
     stages = []
     stages.append(exp.probe_all("t0-fresh", exp.tokens()))
