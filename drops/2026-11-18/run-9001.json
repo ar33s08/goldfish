@@ -1,0 +1,648 @@
+{
+  "seed": 9001,
+  "model": "Qwen3.8-Flash-Next",
+  "stages": [
+    {
+      "stage": "t0-fresh",
+      "age_tokens": 497,
+      "compactions": 0,
+      "window_tokens": 497,
+      "retention": 1.0,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "GOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "GOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "GOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "GOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "GOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 1.0,
+          "answer": "GOLD-09f3c8d1"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "GOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "GOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "GOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "GOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "GOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "GOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "Ember-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "Several tropical fruits include:\n\n- Mango  \n- Pineapple  \n- Papaya  \n- Banana  \n- Passion fruit  \n- Guava  \n- Lychee  \n- Rambutan"
+        }
+      ]
+    },
+    {
+      "stage": "grown-1",
+      "age_tokens": 19498,
+      "compactions": 0,
+      "window_tokens": 19498,
+      "retention": 0.9285714285714286,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "GOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "GOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "GOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "GOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 0.0,
+          "answer": ""
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 1.0,
+          "answer": "GOLD-09f3c8d1"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "GOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "GOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "GOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "GOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "GOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "GOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "Ember-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "Mango, pineapple, papaya, banana, guava, passion fruit, lychee, rambutan, coconut, jackfruit."
+        }
+      ]
+    },
+    {
+      "stage": "grown-2",
+      "age_tokens": 38499,
+      "compactions": 0,
+      "window_tokens": 38499,
+      "retention": 0.9285714285714286,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "GOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "GOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "GOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "GOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "GOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 0.0,
+          "answer": "GOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "GOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "GOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "GOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "GOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "GOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "GOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "Ember-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "Several tropical fruits include:\n\n- mango  \n- pineapple  \n- papaya  \n- banana  \n- passion fruit  \n- guava  \n- lychee  \n- rambutan  \n- mangosteen  \n- coconut"
+        }
+      ]
+    },
+    {
+      "stage": "grown-3",
+      "age_tokens": 57500,
+      "compactions": 0,
+      "window_tokens": 57500,
+      "retention": 0.8571428571428571,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "GOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "GOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 1.0,
+          "answer": "GOLD-a163ecc1"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 0.0,
+          "answer": ""
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "GOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 0.0,
+          "answer": ""
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "GOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 1.0,
+          "answer": "GOLD-2cd05b69"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "GOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "GOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "GOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 1.0,
+          "answer": "GOLD-7d6cee8e"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "Ember-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "Several tropical fruits include:\n\n- mango\n- pineapple\n- papaya\n- banana\n- guava\n- passion fruit\n- lychee\n- rambutan\n- mangosteen\n- coconut"
+        }
+      ]
+    },
+    {
+      "stage": "grown-4",
+      "age_tokens": 76500,
+      "compactions": 0,
+      "window_tokens": 76500,
+      "retention": 0.7142857142857143,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 1.0,
+          "answer": "GOLD-6af17225"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 1.0,
+          "answer": "GOLD-25db139a"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 0.0,
+          "answer": ""
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 1.0,
+          "answer": "GOLD-63e123a2"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 1.0,
+          "answer": "GOLD-d3c9c64b"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 0.0,
+          "answer": ""
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 1.0,
+          "answer": "GOLD-1b41055b"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 0.0,
+          "answer": "GOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 1.0,
+          "answer": "GOLD-ada3511e"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 1.0,
+          "answer": "GOLD-ffe9e626"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 1.0,
+          "answer": "GOLD-08b583c7"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 0.0,
+          "answer": ""
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 1.0,
+          "answer": "Ember-Mantis"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "Here are several tropical fruits:\n\n- Mango\n- Pineapple\n- Papaya\n- Passion fruit\n- Lychee\n- Rambutan\n- Guava\n- Dragon fruit\n- Coconut\n- Banana\n\nLet me know if you want these tied back to the Ember-Mantis notes or the retry-budget work."
+        }
+      ]
+    },
+    {
+      "stage": "post-compact",
+      "age_tokens": 6419,
+      "compactions": 1,
+      "window_tokens": 6419,
+      "retention": 0.07142857142857142,
+      "results": [
+        {
+          "canary": "marker",
+          "slot": 0,
+          "value": "GOLD-6af17225",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 1,
+          "value": "GOLD-25db139a",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 2,
+          "value": "GOLD-a163ecc1",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 3,
+          "value": "GOLD-63e123a2",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 4,
+          "value": "GOLD-d3c9c64b",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 5,
+          "value": "GOLD-09f3c8d1",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 6,
+          "value": "GOLD-1b41055b",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 7,
+          "value": "GOLD-2cd05b69",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 8,
+          "value": "GOLD-ada3511e",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 9,
+          "value": "GOLD-ffe9e626",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 10,
+          "value": "GOLD-08b583c7",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "marker",
+          "slot": 11,
+          "value": "GOLD-7d6cee8e",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "entity",
+          "slot": 12,
+          "value": "Ember-Mantis",
+          "retained": 0.0,
+          "answer": "YOU_FORGOT"
+        },
+        {
+          "canary": "forbidden",
+          "slot": 12,
+          "value": "durian",
+          "retained": 1.0,
+          "answer": "Several tropical fruits include:\n\n- Mango  \n- Pineapple  \n- Papaya  \n- Banana  \n- Guava  \n- Passion fruit  \n- Lychee  \n- Dragon fruit"
+        }
+      ]
+    }
+  ]
+}

@@ -59,6 +59,7 @@ with a pinned comment giving the exact one-liner.
 
 ## Status
 - [x] 3-seed data (done 2026-10-04, files run1.json, run-4242.json, run-9001.json committed)
-- [ ] public repo push (needs gh auth confirm)
-- [ ] screenshots of the three .out curves
-- [ ] D0 posted after green CI / clean-tree check
+- [x] DROP 1 (2026-11-18): 3 fresh seeds vs PRODUCTION bot-farm stack (Qwen3.8-Flash-Next on TensorFold). Post-compact retention 7% / 0% / 7%; codename forgotten 3/3 runs; style rule violated 1/3. Independently re-scored with drops/verify.py: 0/252 mismatches. Files + full sha256 in drops/2026-11-18/. Curve: drop1-curve.png. Post text: D0-draft.md.
+- [x] public repo push (github.com/ar33s08/goldfish, PUBLIC, CI green, 8/8 offline tests)
+- [x] curve image generated (drop1-curve.png, vision-audited legible)
+- [ ] D0 posted (HUMAN GATE: posting hand is Arees')
