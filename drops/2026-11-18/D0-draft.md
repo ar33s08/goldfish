@@ -24,6 +24,8 @@ Your "never touch the migrations folder" instruction is a story the summarizer t
 
 This is our production bot-farm stack — the model + server we actually run 24/7, not a lab build. Curve attached, hashes in repo. Run it against your stack and drop your curve in the comments.
 
+Not another memory-product benchmark: those (FrontierMemory, DolphinBench, LongMemEval) grade memory systems offline. goldfish is one command against YOUR live endpoint, tonight. github.com/ar33s08/goldfish (MIT CLI — a measurement tool, not the goldfish.sh Mac app).
+
 #AIagents #LLM #contextrot
 
 [attach drop1-curve.png]
@@ -33,6 +35,7 @@ This is our production bot-farm stack — the model + server we actually run 24/
 - Token counts are char/4 estimates, labeled as such.
 - 1 rep per stage per seed; substring scoring, never LLM-judged; `YOU_FORGOT` demanded on recall failure so silence is data.
 - "0–7%" = 1 of 14 probes survived in two runs, 0 in one. The single "survivors" were style-rule compliance passes (not memory) — we count them as retained per protocol and show raw counts here.
+- Canary methodology neighbors: Workday's deployment-time-memorization paper (arXiv 2606.10062) uses high-entropy canaries for deletion/privacy; COMPINT (arXiv 2608.11242) found 17% constraint retention on synthetic sets. goldfish = the same honesty applied to YOUR session, on YOUR stack, in one command.
 
 ## Follow-ups queued
 - D2 (drop 2): same model, vLLM build vs TensorFold build — October data says the codename survived 3/3 on vLLM vs 0/3 on production build. That build-vs-build delta is itself a story.
