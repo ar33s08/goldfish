@@ -4,35 +4,37 @@ Every number here is reproducible from github.com/ar33s08/goldfish with:
 `python -m goldfish.cli --base-url <your-endpoint>/v1 --model <model> --markers 12 --seed <1337|4242|9001> --chunks 4 --turns-per-chunk 6 --json run.json`
 Run file hashes (sha256): 1337=`3fbd30f2dd022d37…` 4242=`b06698953f83e434…` 9001=`0a8a41597423ec0f…` (full hashes in repo `drops/2026-11-18/`, independently re-scored: 0/252 probe disagreements).
 
-## Post text (X)
+## FINAL POST (279 chars incl. link — verified) — attach drop1-curve.png
 
-Everyone jokes that agents have "goldfish memory." Nobody could measure it. Now you can — in about an hour, on your own endpoint.
+Run an agent long enough and it forgets your instructions. I didn't have numbers for that, so I built the tool: 14 facts injected, grown to 76k tokens, one forced compaction, then an interrogation.
 
-We injected 14 facts into an agent's context (crypto-random canary strings, a project codename, one style rule), grew the session to 76,000 tokens, and interrogated it memory-only.
+0-7% survived across 3 seeds. The codename never made it.
 
-Through the growth: recall held (93–100%, though one seed quietly frayed to 71% on its own). Then ONE compaction event — the automatic "summarize older context" step every long session hits on a 262k model:
+https://github.com/ar33s08/goldfish
 
-0 to 7% of the facts survived. 3 seeds, same cliff.
+## Reply 1 (post immediately after)
 
-Two details the vendors won't post:
+Two details worth more than the headline:
 
-• The project codename — the one fact that survived all 3 runs on our October test stack — was FORGOT IN EVERY RUN on the production stack. The summarizer keeps stories; it deletes identifiers.
+- The project codename survived 3/3 runs on my October test build. On the production build it was forgotten in every run. The summarizer keeps stories and drops identifiers.
+- One run didn't just forget the "never say X" rule, it used the word. Compliance decay, same pattern as the Governance Decay paper (arXiv 2606.22528).
 
-• On 1 of 3 runs the agent didn't just forget the "never say X" style rule — it cheerfully violated it. Compliance decay, exactly as the Governance Decay paper (arXiv 2606.22528) predicts.
+Run JSONs, hashes, methodology and a corrections policy: https://ar33s08.github.io/goldfish
 
-Your "never touch the migrations folder" instruction is a story the summarizer tells until the day it doesn't.
+## Reply 2 (caveats — put them up before someone asks)
 
-This is our production bot-farm stack — the model + server we actually run 24/7, not a lab build. Curve attached, hashes in repo. Run it against your stack and drop your curve in the comments.
+Disclosed in the methodology (protocol v0.2): compaction is my summarizer, same model under test, not any vendor's native pipeline. Token counts are char/4 estimates. Scoring is deterministic substring with a forced YOU_FORGOT, never LLM-judged. All runs re-scored by a separate verifier: 0 disagreements across 252 probes. Numbers this small move 7pp per probe, so seeds are reported individually, not averaged away.
 
-Lab page (run JSONs, hashes, methodology, corrections policy): https://ar33s08.github.io/goldfish
+## Reply 3 (the harness question, if it comes up)
 
-Not another memory-product benchmark: those (FrontierMemory, DolphinBench, LongMemEval) grade memory systems offline. goldfish is one command against YOUR live endpoint, tonight. github.com/ar33s08/goldfish (MIT CLI — a measurement tool, not the goldfish.sh Mac app).
+Harnesses mitigate this — that's why they exist. We run a 24/7 agent org on this endpoint and it survives by keeping state outside the window. The open question nobody has answered with numbers is whether those mitigations actually work. Next drop measures exactly that: same cliff, pinned-constraint file re-attached after compaction, on/off.
 
-"But don't harnesses fix context rot?" They mitigate it — which is why they exist. We run a 24/7 Hermes agent org on this exact endpoint; it survives compaction by keeping state OUTSIDE the window (memory files, pinned notes, skills). Raw, one compaction, no harness: 0-7%. The open question nobody has answered with numbers: do the mitigations actually work? Next drop: same cliff, pinned-constraint file re-attached after compaction, measured on/off. If your harness claims "never forget" — prove it.
+## Reply 4 (if someone posts a curve or asks to contribute)
 
-#AIagents #LLM #contextrot
+Repo has a "Submit your curve" issue template — attach your run JSON and we re-score it with the verifier and list it on the lab page under your handle. We publish results we don't like too.
 
-[attach drop1-curve.png]
+## Kill switch reminder
+8 weekly drops, <500 combined views, 0 inbound → niche dies clean, full-time Recovery Desk. No fifth invention.
 
 ## Honest-signal labels (keep in thread reply #1)
 - Compaction = goldfish's harness-style summarizer, same model under test (native-client adapters are v0.2).
