@@ -45,12 +45,12 @@
     <tr><td>9001</td><td>7.1%</td><td class="hash">0a8a41597423ec0fc1a18679e4bfe459d81733b5b7fdcff5145876900aa1fd54</td></tr>
   </table>
   <p>Reproduce (replace endpoint/model with your own):</p>
-  <pre>pip install -e .
-python -m goldfish.cli --base-url https://your-endpoint/v1 \
+  <pre>git clone https://github.com/ar33s08/goldfish.git && cd goldfish
+python3 -m goldfish.cli --base-url https://your-endpoint/v1 \
   --model your-model --markers 12 --seed 1337 --chunks 4 --turns-per-chunk 6 \
   --json run-1337.json
-# independent re-score: python drops/verify.py run-*.json  (mismatches must be 0)</pre>
-  <p class="hash">All runs re-scored by a separately-written verifier: 0 disagreements across 252 probes. Limitations per methodology: char/4 token estimates, harness (not vendor) compaction, 14 probes/stage.</p>
+# independent re-score: python3 drops/verify.py run-*.json  (mismatches must be 0)</pre>
+  <p class="hash">All runs re-scored by a separately-written verifier: 0 disagreements across 252 probes. Independent reproduction check (fresh clone, clean system Python, unseen seed 7, 6-canary config): 100% → 100% → 16.7% cliff reproduced, compacted=true. Limitations per methodology: char/4 token estimates, harness (not vendor) compaction, 14 probes/stage.</p>
 </div>
 
 <h2>Queue</h2>
