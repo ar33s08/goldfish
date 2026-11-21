@@ -24,6 +24,8 @@ Your "never touch the migrations folder" instruction is a story the summarizer t
 
 This is our production bot-farm stack — the model + server we actually run 24/7, not a lab build. Curve attached, hashes in repo. Run it against your stack and drop your curve in the comments.
 
+Lab page (run JSONs, hashes, methodology, corrections policy): https://ar33s08.github.io/goldfish
+
 Not another memory-product benchmark: those (FrontierMemory, DolphinBench, LongMemEval) grade memory systems offline. goldfish is one command against YOUR live endpoint, tonight. github.com/ar33s08/goldfish (MIT CLI — a measurement tool, not the goldfish.sh Mac app).
 
 "But don't harnesses fix context rot?" They mitigate it — which is why they exist. We run a 24/7 Hermes agent org on this exact endpoint; it survives compaction by keeping state OUTSIDE the window (memory files, pinned notes, skills). Raw, one compaction, no harness: 0-7%. The open question nobody has answered with numbers: do the mitigations actually work? Next drop: same cliff, pinned-constraint file re-attached after compaction, measured on/off. If your harness claims "never forget" — prove it.
