@@ -37,15 +37,29 @@ def main(argv=None):
         exp.grow(a.turns_per_chunk)
         stages.append(exp.probe_all("grown-%d" % (i + 1), exp.tokens()))
         print("grown-%d done (%dk tok)" % (i + 1, exp.tokens() // 1000), file=sys.stderr, flush=True)
+    compacted = False
     if not a.no_compact:
-        exp.compact()
+        window_before = exp.tokens()
+        if window_before < a.compact_at:
+            print("ERROR: session reached only %d est-tokens, below --compact-at=%d. "
+                  "Compaction would never trigger, so no 'post-compact' stage is "
+                  "reported. Increase --chunks/--turns-per-chunk or lower "
+                  "--compact-at." % (window_before, a.compact_at), file=sys.stderr)
+            return 2
+        if not exp.compact():
+            print("ERROR: compaction did not trigger (transcript no longer than "
+                  "the keep-tail). Increase --turns-per-chunk or --chunks.",
+                  file=sys.stderr)
+            return 2
+        compacted = True
         stages.append(exp.probe_all("post-compact", exp.tokens()))
         print("post-compact done", file=sys.stderr, flush=True)
     # age_tokens is the window at probe time; patch stages accordingly
     print("\n" + render_table(stages) + "\n\n" + render_curve(stages) + "\n\n" + headline(stages))
     if a.json_out:
         with open(a.json_out, "w") as f:
-            json.dump({"seed": a.seed, "model": a.model, "stages": stages}, f, indent=2)
+            json.dump({"seed": a.seed, "model": a.model, "compact_at": a.compact_at,
+                       "compacted": compacted, "stages": stages}, f, indent=2)
     return 0
 
 

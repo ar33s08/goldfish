@@ -107,3 +107,25 @@ def test_report_renderers():
     assert "#" in c
     h = headline(stages)
     assert "goldfish:" in h and "%" in h
+
+
+def test_cli_refuses_fabricated_post_compact(tmp_path, monkeypatch):
+    """Small sessions must exit 2 with NO post-compact stage and NO JSON,
+    instead of fabricating a 100%-retention post-compact line (stranger-test
+    defect, 2026-11-21)."""
+    import goldfish.cli as cli
+    monkeypatch.setattr(cli, "ChatClient", lambda *a, **k: FakePerfect())
+
+    # window never crosses --compact-at
+    rc = cli.main(["--base-url", "http://x/v1", "--model", "m",
+                   "--markers", "2", "--seed", "1", "--chunks", "1",
+                   "--turns-per-chunk", "3", "--compact-at", "24000",
+                   "--json", str(tmp_path / "r1.json")])
+    assert rc == 2 and not (tmp_path / "r1.json").exists()
+
+    # threshold met but transcript shorter than keep-tail -> compact() False
+    rc = cli.main(["--base-url", "http://x/v1", "--model", "m",
+                   "--markers", "2", "--seed", "1", "--chunks", "1",
+                   "--turns-per-chunk", "3", "--compact-at", "1000",
+                   "--json", str(tmp_path / "r2.json")])
+    assert rc == 2 and not (tmp_path / "r2.json").exists()
