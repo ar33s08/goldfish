@@ -1,0 +1,38 @@
+name: Submit your curve
+description: Run goldfish on your stack and submit the run for the public scoreboard
+title: "curve: "
+labels: ["community-run"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Attach the run JSON(s). We re-score with `drops/verify.py` before listing on the lab page.
+        Reproduce steps: https://github.com/ar33s08/goldfish#usage
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint + model + server build
+      placeholder: "e.g. Qwen3.8-Flash-Next @ vLLM 0.11, 262k ctx, thinking on"
+    validations:
+      required: true
+  - type: input
+    id: protocol
+    attributes:
+      label: Protocol version + goldfish git commit used
+      placeholder: "protocol v0.2 @ bd2a6bf"
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Headline result
+      placeholder: "post-compact retention per seed; codename survivor? compliance probe outcome?"
+    validations:
+      required: true
+  - type: textarea
+    id: json
+    attributes:
+      label: Run JSON(s)
+      description: Paste directly, or drag the files in (GitHub attaches them). sha256 will be computed by us.
+    validations:
+      required: true

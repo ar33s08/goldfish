@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>goldfish lab — what your agent actually forgets</title>
+<meta name="description" content="goldfish measures how many facts survive one context compaction in LLM agents. Reproducible numbers, run JSONs, hashes.">
+<style>
+  :root{--bg:#0d1117;--fg:#e6edf3;--mut:#8b949e;--acc:#58a6ff;--red:#f85149;--grn:#3fb950;--line:#21262d;--card:#161b22}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  .wrap{max-width:860px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:32px;margin:0 0 4px;letter-spacing:-.5px}
+  h2{font-size:20px;margin:40px 0 12px;border-bottom:1px solid var(--line);padding-bottom:8px}
+  .sub{color:var(--mut);margin:0 0 24px}
+  a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0}
+  .num{font-size:40px;font-weight:700;color:var(--red);line-height:1.1}
+  .num span{font-size:15px;color:var(--mut);font-weight:400;display:block;margin-top:2px}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+  pre{background:#010409;border:1px solid var(--line);border-radius:8px;padding:14px;overflow-x:auto}
+  .hash{font-size:11px;color:var(--mut);word-break:break-all}
+  .tag{display:inline-block;background:#1f6feb22;color:var(--acc);border:1px solid #1f6feb55;border-radius:20px;padding:1px 10px;font-size:12px;margin-right:6px}
+  .foot{color:var(--mut);font-size:13px;margin-top:48px;border-top:1px solid var(--line);padding-top:16px}
+  img{max-width:100%;border-radius:10px;border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>goldfish lab</h1>
+<p class="sub">How much does your agent actually remember? We inject crypto-random canaries into a session, grow it, force one compaction, then interrogate. Deterministic scoring. Every number reproducible with one command. <a href="https://github.com/ar33s08/goldfish">repo · MIT</a> · <a href="https://github.com/ar33s08/goldfish/blob/main/docs/METHODOLOGY.md">methodology (protocol v0.2)</a></p>
+
+<h2>Drop 1 — production bot-farm stack <span class="tag">2026-11-18</span> <span class="tag">protocol v0.2</span></h2>
+<div class="card">
+  <div class="num">0–7% <span>of 14 injected facts survive one compaction · 3 seeds (7% / 0% / 7%)</span></div>
+  <p>Target: Qwen3.8-Flash-Next, TensorFold build, 262k ctx, thinking on (production config, 24/7 bot farm). Facts held at 71–100% across 76k tokens of growth, then fell off the cliff at the single compaction event. The project codename was forgotten in <b>3/3 runs</b>; the style rule was <b>violated</b> in 1/3.</p>
+  <img src="assets/drop1-curve.png" alt="goldfish retention curves: three seeds hold through growth, collapse after one compaction">
+  <table>
+    <tr><th>seed</th><th>post-compact retention</th><th>run JSON sha256</th></tr>
+    <tr><td>1337</td><td>7.1%</td><td class="hash">3fbd30f2dd022d373e04e838506a11808afd648eda0264041a62d10bb8df1e13</td></tr>
+    <tr><td>4242</td><td>0.0%</td><td class="hash">b06698953f83e434e91037273e0c255f98f6b8ae8e3becf60cdfa910e6f4e771</td></tr>
+    <tr><td>9001</td><td>7.1%</td><td class="hash">0a8a41597423ec0fc1a18679e4bfe459d81733b5b7fdcff5145876900aa1fd54</td></tr>
+  </table>
+  <p>Reproduce (replace endpoint/model with your own):</p>
+  <pre>pip install -e .
+python -m goldfish.cli --base-url https://your-endpoint/v1 \
+  --model your-model --markers 12 --seed 1337 --chunks 4 --turns-per-chunk 6 \
+  --json run-1337.json
+# independent re-score: python drops/verify.py run-*.json  (mismatches must be 0)</pre>
+  <p class="hash">All runs re-scored by a separately-written verifier: 0 disagreements across 252 probes. Limitations per methodology: char/4 token estimates, harness (not vendor) compaction, 14 probes/stage.</p>
+</div>
+
+<h2>Queue</h2>
+<div class="card">
+<p><b>Drop 2</b> — same model, vLLM vs TensorFold build. October data: codename survived 3/3 on vLLM, 0/3 on production build. Config is memory.</p>
+<p><b>Drop 3</b> — does the pinned-constraint fix work? Goldfish on/off with a constraint file re-attached after compaction.</p>
+</div>
+
+<h2>Submit your curve</h2>
+<div class="card">
+<p>Run goldfish on your stack and <a href="https://github.com/ar33s08/goldfish/issues/new/choose">open an issue</a> with your endpoint, model, build and run JSON. We re-score it with the verifier and list it here under your handle. We publish results we don't like too. That's the whole pitch.</p>
+</div>
+
+<h2>Corrections</h2>
+<div class="card"><p>None yet. Any retracted number gets a dated ERRATA entry here and in METHODOLOGY.md; originals are quoted, never silently deleted.</p></div>
+
+<p class="foot">goldfish lab is a measurement project by Arees Manesia · part of a measurement series (decodeproof: claimed vs actual decode speed). No vendor relationships. Contact: <a href="https://github.com/ar33s08">github.com/ar33s08</a></p>
+</div>
+</body>
+</html>
